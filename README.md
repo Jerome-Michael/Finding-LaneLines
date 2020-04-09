@@ -11,7 +11,7 @@ In this project you will detect lane lines in images using Python and OpenCV.  O
 
 ## Dependencies
 
-If you have already installed all the necessary dependencies for the projects in term 1 you should be good to go! If not, you should install them to get started on this project => [Getting Started for Term 1](../term1_How_to_get_started). 
+If you have already installed all the necessary dependencies for the projects in term 1 you should be good to go! If not, you should install them to get started on this project => (https://github.com/udacity/CarND-Term1-Starter-Kit)
  
 ## Basic Build Instructions
 
