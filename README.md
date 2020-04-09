@@ -11,7 +11,7 @@ In this project you will detect lane lines in images using Python and OpenCV.  O
 
 ## Dependencies
 
-If you have already installed all the necessary dependencies for the projects in term 1 you should be good to go! If not, you should install them to get started on this project => (https://github.com/udacity/CarND-Term1-Starter-Kit)
+If you have already installed all the necessary dependencies for the projects in term 1 you should be good to go! If not, you should install them to get started on this project => [Installations] (https://github.com/udacity/CarND-Term1-Starter-Kit)
  
 ## Basic Build Instructions
 
@@ -72,7 +72,7 @@ Note: [Canny Edge Detection Wikipedia](https://en.wikipedia.org/wiki/Canny_edge_
 
 ### Gray Scaling
 
-The images should be converted into gray scaled ones in order to detect shapes (edges) in the images.  This is because the Canny edge detection measures the magnitude of pixel intensity changes or gradients (more on this later).
+The images should be converted into gray scaled ones in order to detect shapes (edges) in the images.  This is because the Canny edge detection measures the magnitude of pixel intensity changes or gradients.
 
 Here, I'm converting the white and yellow line images from the above into gray scale for edge detection.
 
@@ -132,8 +132,6 @@ There are multiple lines detected for a lane line.  We should come up with an av
 Also, some lane lines are only partially recognized.  We should extrapolate the line to cover full lane line length.
 
 We want two lane lines: one for the left and the other for the right.  The left lane should have a positive slope, and the right lane should have a negative slope.  Therefore, we'll collect positive slope lines and negative slope lines separately and take averages.
-
-Note: in the image, `y` coordinate is reversed.  The higher `y` value is actually lower in the image.  Therefore, the slope is negative for the left lane, and the slope is positive for the right lane.
 
 ![png](test_images_output/final_output.png)
 
