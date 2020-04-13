@@ -142,7 +142,15 @@ I'm drawing lanes on video clips.
 
 The video inputs are in test_videos_output folder.  The video outputs are generated in output_videos folder.
 
-## Conclusion
+## Reflection
 
 The project was successful in that the video images clearly show the lane lines are detected properly and lines are very smoothly handled.
+
+It only detects the straight lane lines.  It is an advanced topic to handle curved lanes (or the curvature of lanes).  We'll need to use perspective transformation and also poly fitting lane lines rather than fitting to straight lines.
+
+Having said that, the lanes near the car are mostly straight in the images.  The curvature appears at further distance unless it's a steep curve.  So, this basic lane finding technique is still very useful.
+
+Another thing is that it won't work for steep (up or down) roads because the region of interest mask is assumed from the center of the image.
+
+For steep roads, we first need to detect the horizontal line (between the sky and the earth) so that we can tell up to where the lines should extend.
 
